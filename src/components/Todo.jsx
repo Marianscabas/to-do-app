@@ -6,12 +6,12 @@ const Todo = ({ todo, handleSetComplete, handleDelete }) => {
 
     return (
         <div
-            className="flex items-center justify-between p-4 bg-gray-700 border-b border-solid border-gray-600 "
+            className="flex items-center justify-between p-4 bg-gray-100 dark:bg-gray-700 border-b border-solid border-gray-300  dark:border-gray-600"
         >
             <div className="flex items-center">
                 {
                     completed ? (
-                        <div onClick={() => handleSetComplete(id)} className="bg-green-700 p-1 rounded-full cursor-pointer">
+                        <div onClick={() => handleSetComplete(id)} className="bg-gradient-to-r  from-pink-500 to-blue-400 p-1 rounded-full cursor-pointer">
                             <img
                                 className="h-4 w-4 " src="/check-icon.svg" alt="Check Icon"
                             />
